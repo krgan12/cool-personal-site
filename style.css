@@ -55,7 +55,7 @@ h2 {
 
 .container {
     border: 0.5px solid;
-    background-color: #16011e; /*alt color: #12141d; rgba(128, 0, 128, 0.724)  prime: rgb(32, 31, 31) rgb(27, 27, 27)*/
+    background-color: #1e2028; /*alt color: #12141d; rgba(128, 0, 128, 0.724)  prime: rgb(32, 31, 31) rgb(27, 27, 27)*/
     opacity: 0.9;
     position: fixed;
     top: 100px;
