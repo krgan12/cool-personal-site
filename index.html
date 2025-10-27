@@ -18,7 +18,7 @@
 
 </head>
 <body onload="init()">
-    <!-- <canvas id="canvas" width="2000" height="1000" style="display: block; margin: 0 auto; "></canvas> -->
+    <canvas id="canvas" width="2000" height="1000" style="display: block; margin: 0 auto; "></canvas>
     <section class="section">
         <div class="container">
             <img class="img-1" src="images/keagan.jpeg" alt="HI Image">
@@ -61,14 +61,14 @@
         <button id="cont"><a id="e-mail-tag" href="mailto:keagan123@outlook.com">Contact</a></button>
     </section>
 
-    <section class="projects container-2" style="">
+     <section class="projects container-2" style="">
 
         <div class="project-card">
             <h2 class="project-type">Web App / PWA</h2>
             <h3 class="project-title">Sheridan Nexus</h3>
             <p class="project-desc">
-                A platform that helps students throughout their Sheridan journey. Plan semesters, 
-                find course information, compare average GPAs, and coruse reviews.
+                A platform that helps students during their Sheridan journey. Plan semesters, 
+                find course information, compare average GPAs, and course reviews.
             </p>
 
             <div class="tech-stack">
@@ -78,16 +78,16 @@
                 <span class="tag">JavaScript</span>
                 <span class="tag">MongoDB</span>
             </div>
-            <!-- <div class="img-placeholder"></div> -->
+            
              <img src="" alt="" class="project-image">
             <a href="#" target="_blank" class="view-link">VIEW PROJECT</a>
         </div>
 
         <div class="project-card">
             <h2 class="project-type">Web App</h2>
-            <h3 class="project-title">NHL Game Stats App 📈</h3>
+            <h3 class="project-title">NHL Stats App 📈</h3>
             <p class="project-desc">
-                Application that scrapes the NGL for game-related data, provides live score updates,
+                Application that scrapes the NHL for game-related data, provides live score updates,
                 and generated reports for the top performing teams in the league.
             </p>
             <div class="tech-stack">
@@ -97,17 +97,17 @@
                 <span class="tag">Express</span>
                 <span class="tag">NHL Api</span>
             </div>
-            <!-- <div class="img-placeholder"></div> -->
+            
              <img src="" alt="" class="project-image">
             <a href="#" target="_blank" class="view-link">VIEW PROJECT</a>
         </div>
 
 
-        <div class="project-card">
+        <div id="quote-card" class="project-card">
             <h2 class="project-type">Web App</h2>
             <h3 class="project-title">Quotes App 🗣️</h3>
-            <p class="project-desc">
-                Application that scrapes motivational quotes from a custom API to compare multiple
+            <p id="quotes-p" class="project-desc">
+                A Web App that scrapes motivational quotes from a custom API to compare multiple
                 quotes and help users stay focused in their daily life.
             </p>
             <div class="tech-stack">
@@ -117,11 +117,11 @@
                 <span class="tag">Flask</span>
                 <span class="tag">Quotes Api</span>
             </div>
-            <!-- <div class="img-placeholder"></div> -->
-             <img src="" alt="" class="project-image">
             <a href="#" target="_blank" class="view-link">VIEW PROJECT</a>
+             <img id="quote-p" src="images/quotesWebsite.png" alt="" class="project-image">
+            
         </div>
-    </section>
+    </section> 
     
 </body>
 </html>

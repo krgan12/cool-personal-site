@@ -55,7 +55,7 @@ h2 {
 
 .container {
     border: 0.5px solid;
-    background-color: rgb(27, 27, 27); /*alt color: #12141d; rgba(128, 0, 128, 0.724)  prime: rgb(32, 31, 31)*/
+    background-color: #16011e; /*alt color: #12141d; rgba(128, 0, 128, 0.724)  prime: rgb(32, 31, 31) rgb(27, 27, 27)*/
     opacity: 0.9;
     position: fixed;
     top: 100px;
@@ -65,6 +65,15 @@ h2 {
     width: 225px;
     height: 275px;
     z-index: 10;
+}
+
+#quote-card {
+    position: relative;
+}
+
+#quote-img {
+    position: relative;
+    height: 0px;
 }
 
 .container-2 {
@@ -299,9 +308,9 @@ button + button {
     min-height: 520px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
-    top: 500px;
+    top: 590px;
     left: 150px;
     box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.15);
     transition: all 0.3s ease-in-out;
@@ -318,6 +327,9 @@ button + button {
     font-size: 16px;
     font-weight: 400;
     position: relative;
+    margin-top: 15px;
+    margin-bottom: 0.5rem;
+    /* top: -10px; */
     /* left: -600px; */
     /* letter-spacing: 0.8px; */
     /* margin-bottom: 0.3rem; */
@@ -325,7 +337,7 @@ button + button {
 
 .project-type, .project-title {
     text-align: left;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-left: 0;
 }
 
@@ -334,51 +346,52 @@ button + button {
     font-weight: 500;
     letter-spacing: .5;
     color: #fff;
-    margin-top: -52px;
+    margin-bottom: 0.25rem;
+    /* margin-top: -76px; */
 }
 
 .project-desc {
-    font-size: 17.5px;
+    font-size: 16px;
     color: #8f9094;
-    font-weight: 0;
     line-height: 1.5;
     position: relative;
-    top: -75px;
+    margin-bottom: 1rem;
+    margin-top: 8px;
+    /* top: -90px; */
     /* margin-bottom: 1.5rem; */
 }
 
 .tech-stack {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    /* margin-bottom: 2rem; */
-    position: relative;
-    top: -120px;
+    margin-bottom: 1rem;
+    /* top: -153px; */
 }
 
 .tag {
     background: linear-gradient(90deg, #1dfe1d, #00e300);
     color: rgb(0, 0, 0);
     padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.3px;
     transition: transform 0.2s ease;
 }
 
 .view-link {
-    color: #00ff00;
-    /* text-decoration: underline; */
+    position: relative;
+    align-self: flex-start;
+    color: white;
     text-underline-offset: 4px;
     text-align: left;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
-    position: relative;
-    top: -1px;
-    left: -5px;
-    transition: color 0.3s ease;
-    align-self: flex-start;
+    top: 10px;
+    left: -1px;
+    transition: 0.2s ease;
 }
 
 .view-link:hover {
@@ -386,9 +399,15 @@ button + button {
     text-decoration: underline;
 }
 
-project-image {
+.project-image {
+    margin-top: 2rem;
+}
+
+/* .project-image { 
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px;
-}
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+} */
