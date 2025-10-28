@@ -158,12 +158,28 @@ function tick(time) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    
+    const projBtn = document.getElementById("proj");
     const aboutBtn = document.getElementById("abM");
     const buttonsSection = document.querySelector(".buttons");
     const aboutSection = document.getElementById("about-section");
+    const projectSection = document.querySelector(".projects");
+    const backBtnProjects = document.getElementById("backBtnProjects");
+
+    backBtnProjects.addEventListener("click", () => {
+        projectSection.style.transition = "opacity 0.6s ease";
+        projectSection.style.opacity = "0";
+
+        setTimeout(() => {
+            projectSection.style.display = "none";
+            buttonsSection.style.display = "block";
+            buttonsSection.style.opacity = "1";
+        }, 600);
+    });
 
     const introText = document.querySelector(".intro-desc");
     const concText = document.querySelector(".intro-conc");
+
 
     const fullText = introText.textContent.trim();
 
@@ -173,7 +189,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
      const backBtn = document.getElementById("backBtn");
 
+     projBtn.addEventListener("click", () => {
+        buttonsSection.style.transition = "opacity 0.6s ease";
+        buttonsSection.style.opacity = "0";
+
+        setTimeout(() => {
+            buttonsSection.style.display = "none";
+            projectSection.style.display = "flex";
+            projectSection.style.opacity = "0";
+            projectSection.style.transition = "opacity 0.6s ease";
+            setTimeout(() => {
+                projectSection.style.opacity = "1";
+                projectSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 50);
+        }, 600);
+     })
+     
+
     backBtn.addEventListener("click", () => {
+
+        if (projectSection.style.display === "flex") {
+            projectSection.style.transition = "opacity 0.6s ease";
+            projectSection.style.opacity = "0";
+
+            setTimeout(() => {
+                projectSection.style.display = "none";
+                buttonsSection.style.display = "block";
+                buttonsSection.style.opacity = "1";
+            }, 600);
+        }
+
         aboutSection.style.transition = "opacity 0.6s ease";
         aboutSection.style.opacity = "0";
 
@@ -222,4 +267,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 });
-

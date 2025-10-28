@@ -2,7 +2,7 @@ body {
     margin: 0; 
     padding: 0; 
     background-color: #000000; 
-    /* overflow: hidden; */
+    overflow: auto;
     overflow-y: auto;
     
 }
@@ -300,6 +300,7 @@ button + button {
 }
 
 .project-card {
+    position: relative;
     background-color: #0d0d0d;
     border: 1px solid #00ff00;
     border-radius: 12px;
@@ -309,7 +310,6 @@ button + button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    position: relative;
     top: 590px;
     left: 150px;
     box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.15);
@@ -403,6 +403,8 @@ button + button {
     margin-top: 2rem;
 }
 
+
+
 /* .project-image { 
   width: 100%;
   height: 150px;
@@ -411,3 +413,17 @@ button + button {
   margin-top: 1rem;
   margin-bottom: 1rem;
 } */
+
+#backBtnProjects {
+    /* position: fixed; */
+    /* top: 50px; */
+}
+
+.projects .back-btn {
+    /* position: fixed;
+    bottom: -50%;
+    top: 900px;
+    left: 50%; */
+    /* transform: translateX(-50%); */
+    /* margin-top: 3rem; */
+}
