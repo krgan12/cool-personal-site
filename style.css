@@ -14,7 +14,7 @@ html {
 
 .name-title {
     text-align: center;
-    font-weight: 550;
+    font-weight: 500; /* 550 */
     color: #f9f9f9fa;
     font-family: "system-ui", -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.2px;
@@ -22,10 +22,10 @@ html {
     transition: color 0.3s ease;
 }
 
-.name-title:hover {
+/* .name-title:hover {
     color: #00ff00;
     cursor: pointer;
-}
+} */
 
 .subtitle {
     text-align: center;
