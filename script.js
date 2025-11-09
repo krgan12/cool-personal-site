@@ -157,6 +157,25 @@ function tick(time) {
     requestAnimationFrame(tick);
 }
 
+
+function redirect() {
+    window.open("https://www.linkedin.com/in/keaganr/", "_blank");
+}
+
+
+window.addEventListener("load", function() {
+    
+    setTimeout(() => {
+        const content = this.document.getElementById("content-wrapper");
+        content.style.display = "block";
+       
+        setTimeout(() => {
+            content.classList.add("fade-in");
+        }, 50);
+    }, 4000); // in MS (i.e. 3000ms = 3 secs)
+
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     
     const projBtn = document.getElementById("proj");
