@@ -272,9 +272,11 @@ button + button {
 
 .back-btn {
     position: absolute;
-    bottom: 40px;
+    /* bottom: 40px; */
     /* top: 800px; */
     top: auto !important;
+    bottom: 55px;
+    left: 0;
     margin: 1rem auto !important;
     text-align: center !important;
     left: 50% !important;
@@ -301,6 +303,7 @@ button + button {
 #left-btn {
     position: relative;
     left: -2px;
+    top: -2px;
 }
 
 .back-btn:active {
@@ -449,8 +452,8 @@ margin-bottom: 1rem;
 } */
 
 #backBtnProjects {
-/* position: fixed; */
-/* top: 50px; */
+    position: fixed;
+    top: 50px;
 }
 
 .projects .back-btn {
