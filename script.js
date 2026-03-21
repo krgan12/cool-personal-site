@@ -172,7 +172,7 @@ window.addEventListener("load", function() {
         setTimeout(() => {
             content.classList.add("fade-in");
         }, 50);
-    }, 2795); // in MS (i.e. 3000ms = 3 secs)
+    }, 2875); // in MS (i.e. 3000ms = 3 secs) // 2795 is a good number
 
 });
 
