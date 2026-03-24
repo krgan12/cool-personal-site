@@ -93,6 +93,11 @@ h2 {
     position: relative;
 }
 
+#quote-card-1 {
+    position: relative;
+    left: 200;
+}
+
 #quote-img {
     position: relative;
     height: 0px;
@@ -439,8 +444,6 @@ button + button {
 .project-image {
     margin-top: 2rem;
 }
-
-
 
 /* .project-image {
 width: 100%;
